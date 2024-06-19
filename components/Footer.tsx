@@ -30,16 +30,16 @@ const Footer = () => {
                     <h1 className='text-white font-semibold mb-[1.4rem] text-[17px]'>
                         Quick Link
                     </h1>
-                    <a className='text-[15px] text-white opactiy-80 mb-[1rem] cursor-pointer hover:text-yellow-300' href="aboutme" onClick={() => scrollToSection('AboutMe')}>
+                    <a className='text-[15px] text-white opactiy-80 mb-[1rem] cursor-pointer hover:text-yellow-300' href="#aboutme" onClick={() => scrollToSection('AboutMe')}>
                         About Me
                     </a>
-                    <a className='text-[15px] text-white opactiy-80 mb-[1rem] cursor-pointer hover:text-yellow-300' href="projects" onClick={() => scrollToSection('Projects')}>
+                    <a className='text-[15px] text-white opactiy-80 mb-[1rem] cursor-pointer hover:text-yellow-300' href="#projects" onClick={() => scrollToSection('Projects')}>
                         Expeirence
                     </a>
-                    <a className='text-[15px] text-white opactiy-80 mb-[1rem] cursor-pointer hover:text-yellow-300' href="experience" onClick={() => scrollToSection('Experience')}>
+                    <a className='text-[15px] text-white opactiy-80 mb-[1rem] cursor-pointer hover:text-yellow-300' href="#experience" onClick={() => scrollToSection('Experience')}>
                         Projects
                     </a>
-                    <a className='text-[15px] text-white opactiy-80 mb-[1rem] cursor-pointer hover:text-yellow-300' href="contactme" onClick={() => scrollToSection('ContactMe')}>
+                    <a className='text-[15px] text-white opactiy-80 mb-[1rem] cursor-pointer hover:text-yellow-300' href="#contactme" onClick={() => scrollToSection('ContactMe')}>
                         Contact Me
                     </a>
                 </div>

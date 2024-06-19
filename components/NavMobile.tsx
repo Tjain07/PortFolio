@@ -27,22 +27,22 @@ const NavMobile = ({closeNav,showNav}:Props) => {
                     </a>
                 </li>
                 <li>
-                    <a className='nav__link text-[25px] sm:text-[30px]' href="aboutme" onClick={() => scrollToSection('AboutMe')}>
+                    <a className='nav__link text-[25px] sm:text-[30px]' href="#aboutme" onClick={() => scrollToSection('AboutMe')}>
                         About Me
                     </a>
                 </li>
                 <li>
-                    <a className='nav__link text-[25px] sm:text-[30px]' href="projects" onClick={() => scrollToSection('Projects')}>
+                    <a className='nav__link text-[25px] sm:text-[30px]' href="#projects" onClick={() => scrollToSection('Projects')}>
                         Projects
                     </a>
                 </li>
                 <li>
-                    <a className='nav__link text-[25px] sm:text-[30px]' href="experience" onClick={() => scrollToSection('Expeirence')}>
+                    <a className='nav__link text-[25px] sm:text-[30px]' href="#experience" onClick={() => scrollToSection('Expeirence')}>
                         Experience
                     </a>
                 </li>
                 <li>
-                    <a className='nav__link text-[25px] sm:text-[30px]' href="contactme" onClick={() => scrollToSection('ContactMe')}>
+                    <a className='nav__link text-[25px] sm:text-[30px]' href="#contactme" onClick={() => scrollToSection('ContactMe')}>
                         Contact Me
                     </a>
                 </li>

@@ -44,16 +44,16 @@ const Nav = ({ openNav }: Props) => {
                         <a className='nav__link' href="" onClick={() => scrollToSection('Home')}>Home</a>
                     </li>
                     <li>
-                        <a className='nav__link' href="aboutme" onClick={() => scrollToSection('AboutMe')}>About Me</a>
+                        <a className='nav__link' href="#aboutme" onClick={() => scrollToSection('AboutMe')}>About Me</a>
                     </li>
                     <li>
-                        <a className='nav__link' href="projects" onClick={() => scrollToSection('Projects')}>Projects</a>
+                        <a className='nav__link' href="#projects" onClick={() => scrollToSection('Projects')}>Projects</a>
                     </li>
                     <li>
-                        <a className='nav__link' href="experience" onClick={() => scrollToSection('Experience')}>Experience</a>
+                        <a className='nav__link' href="#experience" onClick={() => scrollToSection('Experience')}>Experience</a>
                     </li>
                     <li>
-                        <a className='nav__link' href="contactme" onClick={() => scrollToSection('ContactMe')}>Contact Me</a>
+                        <a className='nav__link' href="#contactme" onClick={() => scrollToSection('ContactMe')}>Contact Me</a>
                     </li>
                 </ul>
                 <Bars3CenterLeftIcon
