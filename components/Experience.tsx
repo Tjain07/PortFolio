@@ -3,7 +3,7 @@ import ExpeirenceSlider from './Helper/ExperienceSlider';
 
 const Experience = () => {
   return (
-    <section id="Expeirence">
+    <section id="Experience">
     <div className='pt-[5rem] pb-[3rem] bg-gray-900 '>
         <div className='text-center'>
             <p className='heading__mini'>Expeirence</p>
