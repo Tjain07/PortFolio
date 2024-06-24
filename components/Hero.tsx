@@ -18,7 +18,7 @@ const Hero = () => {
       };
 
       const handleDownload = () => {
-        window.open('https://drive.google.com/uc?export=download&id=1xmtymmbJ4pmNzKlVJ8W8sTuPy673FHZ7', '_blank');
+        window.open('https://drive.google.com/uc?export=download&id=1eqtTD3Qd_SVKcuDKNLu0TjSZWOEO9MJ-', '_blank');
       };
     
   return (
