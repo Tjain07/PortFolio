@@ -40,7 +40,7 @@ const Nav = ({ toggleNav, isNavOpen }: Props) => {
                     </div>
                     <ul className='md:flex hidden items-center space-x-10'>
                         <li>
-                            <a className='nav__link' href="$Home" onClick={() => scrollToSection('Home')}>Home</a>
+                            <a className='nav__link' href="#Home" onClick={() => scrollToSection('Home')}>Home</a>
                         </li>
                         <li>
                             <a className='nav__link' href="#aboutme" onClick={() => scrollToSection('AboutMe')}>About Me</a>
