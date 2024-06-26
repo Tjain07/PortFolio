@@ -14,31 +14,34 @@ import 'aos/dist/aos.css';
 
 const HomePage = () => {
 
-  const [showNav,setShowNav]=useState(false);
-  const showNavHandler =()=>setShowNav(true);
-  const closeNavHandler =()=>setShowNav(false);
+  const [showNav, setShowNav] = useState(false);
+  const showNavHandler = () => setShowNav(true);
+  const closeNavHandler = () => setShowNav(false);
 
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init({
-      duration:1000,
-      easing:'ease',
+      duration: 1000,
+      easing: 'ease',
       once: true,
       anchorPlacement: "top-bottom",
     });
-  },[]);
+  }, []);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
   return (
-  <div className='overflow-hidden'>
-    <NavMobile showNav= {showNav} closeNav={closeNavHandler} />
-    <Nav openNav={showNavHandler}/>
-    <Hero />
-    <AboutMe />
-    <Skills />
-    <Projects />
-    <Experience />
-    <ContactMe />
-    <Footer />
-  </div>
+    <div className='overflow-hidden'>
+      <Nav toggleNav={toggleNav} isNavOpen={isNavOpen} />
+      <Hero />
+      <AboutMe />
+      <Skills />
+      <Projects />
+      <Experience />
+      <ContactMe />
+      <Footer />
+    </div>
   );
 }
 

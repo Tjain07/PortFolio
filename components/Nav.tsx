@@ -1,31 +1,24 @@
 import { Bars3CenterLeftIcon, Bars3Icon } from '@heroicons/react/16/solid';
 import React, { useEffect, useState } from 'react';
-import NavMobile from './NavMobile'; // Import the NavMobile component
+import NavMobile from './NavMobile';
 
-interface Props {}
+interface Props {
+    toggleNav: () => void;
+    isNavOpen: boolean;
+}
 
-const Nav = ({}: Props) => {
-    const [navSticky, setnavSticky] = useState(false);
-    const [isNavOpen, setIsNavOpen] = useState(false);
+const Nav = ({ toggleNav, isNavOpen }: Props) => {
+    const [navSticky, setNavSticky] = useState(false);
 
     useEffect(() => {
         const handler = () => {
-            if (window.scrollY >= 90) {
-                setnavSticky(true);
-            }
-            if (window.scrollY <= 90) {
-                setnavSticky(false);
-            }
+            setNavSticky(window.scrollY >= 90);
         };
         window.addEventListener("scroll", handler);
         return () => {
             window.removeEventListener("scroll", handler);
         };
     }, []);
-
-    const toggleNav = () => {
-        setIsNavOpen(!isNavOpen);
-    };
 
     const stickStyle = navSticky ? 'bg-[#212428] shadow-gray-900 shadow-sm' : '';
     const scrollToSection = (id: string) => {
@@ -47,7 +40,7 @@ const Nav = ({}: Props) => {
                     </div>
                     <ul className='md:flex hidden items-center space-x-10'>
                         <li>
-                            <a className='nav__link' href="#Home" onClick={() => scrollToSection('Home')}>Home</a>
+                            <a className='nav__link' href="$Home" onClick={() => scrollToSection('Home')}>Home</a>
                         </li>
                         <li>
                             <a className='nav__link' href="#aboutme" onClick={() => scrollToSection('AboutMe')}>About Me</a>
