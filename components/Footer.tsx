@@ -34,7 +34,7 @@ const Footer = () => {
                         About Me
                     </a>
                     <a className='text-[15px] text-white opactiy-80 mb-[1rem] cursor-pointer hover:text-yellow-300' href="#projects" onClick={() => scrollToSection('Projects')}>
-                        Expeirence
+                        Experience
                     </a>
                     <a className='text-[15px] text-white opactiy-80 mb-[1rem] cursor-pointer hover:text-yellow-300' href="#experience" onClick={() => scrollToSection('Experience')}>
                         Projects

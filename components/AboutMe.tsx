@@ -40,7 +40,7 @@ const AboutMe = () => {
                     <div data-aos="zoom-in" data-aos-anchor-placement="top-center" className='p-6 text-center bg-yellow-500 '>
                         <p className='text-[50px] text-black font-bold '>6+</p>
                         <p className='text-[15px] text-black font-600'>
-                            Months Internship Experirence 
+                            Months Internship Experience 
                         </p>
                     </div>
                     <div data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-delay="200" className='p-6 text-center bg-yellow-500 '>
